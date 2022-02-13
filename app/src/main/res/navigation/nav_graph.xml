@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.encryptionalgorithms.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_aesAlgorithmFragment"
+            app:destination="@id/aesAlgorithmFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_passwordMatchingFragment"
+            app:destination="@id/passwordMatchingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_desAlgorithmFragment"
+            app:destination="@id/desAlgorithmFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_rsaAlgorithmsFragment"
+            app:destination="@id/rsaAlgorithmsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_md5Fragment"
+            app:destination="@id/md5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aesAlgorithmFragment"
+        android:name="com.example.encryptionalgorithms.ui.fragments.AesAlgorithmFragment"
+        android:label="fragment_aes_algorithm"
+        tools:layout="@layout/fragment_aes_algorithm" />
+    <fragment
+        android:id="@+id/desAlgorithmFragment"
+        android:name="com.example.encryptionalgorithms.ui.fragments.DesAlgorithmFragment"
+        android:label="fragment_des_algorithm"
+        tools:layout="@layout/fragment_des_algorithm" />
+    <fragment
+        android:id="@+id/md5Fragment"
+        android:name="com.example.encryptionalgorithms.ui.fragments.Md5Fragment"
+        android:label="fragment_md5"
+        tools:layout="@layout/fragment_md5" />
+    <fragment
+        android:id="@+id/passwordMatchingFragment"
+        android:name="com.example.encryptionalgorithms.ui.fragments.PasswordMatchingFragment"
+        android:label="fragment_password_matching"
+        tools:layout="@layout/fragment_password_matching" />
+    <fragment
+        android:id="@+id/rsaAlgorithmsFragment"
+        android:name="com.example.encryptionalgorithms.ui.fragments.RsaAlgorithmsFragment"
+        android:label="fragment_rsa_algorithms"
+        tools:layout="@layout/fragment_rsa_algorithms" />
+</navigation>
