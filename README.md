@@ -1,8 +1,9 @@
 # Encryption-Algorithms
-this app demonstration for different message encryption algorithms used for encryption decryption of messages over network communication 
+this app demonstrate different message encryption algorithms used for encryption decryption of messages over network communication 
 and hashing technique used for the password matching by generating the hash 
 
 Used Algorithms are:
+
 1) AES-Encryptiong Algorithm
 
 2) DES-Encryption Algorithm
